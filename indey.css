@@ -1,0 +1,31 @@
+html,body{margin:0}
+
+:root{
+  --thisoe:#178577;
+}
+
+i{all:unset;display:flex;flex-direction:column}
+button,input{all:unset}
+
+main{
+  position:fixed;top:0;left:0;
+  width:100vw;height:100vh;
+  display:flex;flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background-color:black;
+
+  & *{margin:0;color:#eee}
+  >h1{font-size:39pt;line-height:2}
+  >cite{
+    color:#ccc;
+    font-style:italic;
+    >a{
+      text-decoration:none;color:#aaa;
+      &:hover{text-decoration:underline;color:var(--thisoe)}
+    }
+  }
+  
+}
+
+
